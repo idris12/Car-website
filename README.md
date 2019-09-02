@@ -1,7 +1,7 @@
 # Car-website
 A website for displaying one of my favorite car and it features.
 
- Website link : https://lucid-williams-b45c12.netlify.com/
+ Website link : https://laughing-bardeen-39772e.netlify.com/
 
 This website includes 2 pages the home page and the sign up page and they are both responsive the technology used are listed down below
 
