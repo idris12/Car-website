@@ -1,0 +1,193 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Lobster");
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #0A0B0A ;
+  font-family: "Roboto", sans-serif;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+#overlay {
+  text-align: center;
+  background: rgba(0, 0, 0, 0.9);
+  width: 80%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  z-index: 2;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+#overlay ul {
+  list-style: none;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+#overlay li {
+  padding-top: 70px;
+  font-size: 3rem;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+header {
+  margin: -6px;
+  
+  padding: 20px;
+  color: white;
+}
+header .fa-accusoft {
+  color: #25D317;
+}
+
+.special a{
+    color: #25D317;
+}
+
+ a {
+    text-decoration: none;
+    color:white;
+  }
+header .ham-button {
+  width: 35px;
+  height: 5px;
+  background-color: white;
+  margin: 6px 0;
+}
+header ul {
+  display: none;
+}
+
+
+header .header-buttons__brand {
+  display: flex;
+  justify-content: space-between;
+}
+header .info-header {
+  padding-top: 50px;
+  text-align: center;
+}
+header .info-header h2 {
+  letter-spacing: 5px;
+  font-size: 2rem;
+}
+header .info-header h4 {
+  font-size: 1.5rem;
+}
+header .info-header p {
+  line-height: 2rem;
+}
+header span {
+  color: #25D317;
+}
+
+
+@media (min-width: 40rem) {
+    header .header-buttons__brand {
+      display: flex;
+      justify-content: space-between;
+      align-content: center;
+    }
+    header .buttons {
+      display: none;
+    }
+    header ul {
+      margin: 0;
+      list-style: none;
+      display: flex;
+      justify-content: center;
+    }
+    header li {
+      padding: 0 10px;
+    }
+    header .special {
+      color: #25D317;
+    }
+    header .info-header {
+      padding-top: 10px;
+      text-align: center;
+    }
+    header .info-header h2 {
+      letter-spacing: 5px;
+      font-size: 4rem;
+    }
+    header .info-header h4 {
+      font-size: 2.5rem;
+    }
+    header .info-header p {
+      line-height: 2.5rem;
+    }
+    header span {
+      color: #25D317;
+    }
+  
+    #car-performace .car-performance__moreinfo {
+      padding-top: 40px;
+      grid-template-columns: repeat(3, auto);
+    }
+  
+    #car-stats table {
+      width: 80%;
+      font-size: 1.5rem;
+    }
+  
+    #car-image__display {
+      grid-template-columns: 70% 30%;
+      grid-row-gap: 1.5rem;
+      grid-column-gap: 0.1rem;
+      align-items: center;
+    }
+    #car-image__display img {
+      width: 100%;
+    }
+    #car-image__display p {
+      color: #9CD898;
+    }
+  
+    #final-section {
+      height: 60vh;
+    }
+  }
+  @media (min-width: 59rem) {
+    header {
+      height: 80vh;
+    }
+    header li {
+      padding: 0 30px;
+      font-size: 1.2rem;
+    }
+    header .info-header {
+      padding-top: 5%;
+    }
+    header .info-header h2 {
+      letter-spacing: 5px;
+      font-size: 4rem;
+    }
+    header .info-header h4 {
+      font-size: 2.5rem;
+    }
+    header .info-header p {
+      line-height: 3rem;
+      font-size: 1.8rem;
+    }
+  
+    #car-image__display {
+      grid-template-columns: 60% 40%;
+      grid-row-gap: 1.5rem;
+      grid-column-gap: 0.1rem;
+      align-items: center;
+    }
+    #car-image__display img {
+      width: 100%;
+    }
+    #car-image__display p {
+      color: #9CD898;
+      font-size: 3rem;
+    }
+  }

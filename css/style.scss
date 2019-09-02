@@ -1,0 +1,397 @@
+
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lobster');
+
+$colors:(green:#25D317);
+
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background: black;
+    font-family: 'Roboto', sans-serif;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+
+#overlay {
+    text-align: center;
+	background: rgba(0, 0, 0, 0.9);
+	width: 80%;
+	height: 100vh;
+	position: fixed;
+	top: 0;
+	z-index: 2;
+	display: none;
+	justify-content: center;
+    align-items: center;
+
+    a{
+        text-decoration: none;
+        color:white;   
+    }
+    
+    ul {
+        list-style: none;
+        color: white;
+        display: flex;
+        flex-direction: column;
+    }
+
+    li {
+        padding-top: 70px;
+    
+        font-size: 3rem;
+        text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    }
+}
+
+
+
+// header mobile
+header{
+    margin: -6px;
+    background: url("/images/headerimgmob.jpg")  no-repeat center center ;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 60vh;
+    padding: 20px;
+    color: white;
+
+    // logo
+    .fa-accusoft{
+        color:map-get($colors,green );
+    }
+
+    // hamburger buttons
+    .ham-button{
+    width: 35px;
+    height: 5px;
+    background-color: white;
+    margin: 6px 0;
+    }
+
+    //ul
+
+    ul{
+        display: none;
+    }
+
+     .header-buttons__brand{
+        display: flex;
+        justify-content:space-between;
+     }
+
+     .special a{
+         text-decoration: none;
+         color: map-get($colors,green )
+     }
+
+     a{
+        text-decoration: none;
+         color:white;  
+     }
+
+     .info-header{
+         padding-top: 50px;
+         text-align: center;
+     }
+
+     .info-header h2{
+         letter-spacing: 5px;
+         font-size: 2rem;
+     }
+
+     .info-header h4{
+       font-size: 1.5rem;
+    }
+
+    .info-header p{
+       line-height: 2rem;
+    }
+
+     span{
+        color:map-get($colors,green )
+     }
+
+}
+
+#car-performace{
+    background:#090A08;
+    color: white;
+    font-family: 'lobster', sans-serif;
+
+    
+    .car-perfomace__text{
+    text-align: center;
+    }
+    
+    .car-perfomace__text h2{
+        padding-top: 20px;
+    }
+
+  
+    .car-performance__moreinfo{
+    text-align: center;
+    display: grid;
+    grid-template-rows: repeat(3,auto);
+        
+    }
+
+    h2{
+        font-size: 2rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    i{
+        color: map-get($colors,green );
+    }
+  
+}
+
+
+#car-stats{
+    background: #0A0B0A  ;
+     color: white;
+     margin: 0;
+   
+
+  table{
+      margin: 0 auto;
+      padding-top: 5rem;
+      text-align: center;
+      
+     
+  }
+
+   th {
+    padding: 10px;
+    background-color: #5B9757;
+    color: white;
+  }
+
+  td{
+      text-align: center;
+      padding: 20px;
+      border-bottom: 2px solid white;
+  }
+
+  .last-td{
+      border-bottom: none;
+  }
+
+  
+}
+
+#car-image__display{
+    text-align: center;
+   width: 100%;
+    padding-top: 0.2rem;
+    color: white;
+    display: grid;
+    grid-template-rows: repeat(4, auto);
+    align-content: center;
+    font-family: "lobster";
+  
+  img{
+       width: 100%;
+       
+   }
+
+   p{
+       color: #9CD898;
+   }
+    
+}
+
+
+#final-section{
+   background: url("/images/finalimage2.0.jpg")  no-repeat center center;
+   -webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
+   background-size: cover;
+   height: 60vh;
+   padding-top: 2rem;
+   color: white;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+  
+    h3{
+      font-size: 2.5rem;
+      color: #9CD898;
+      padding-bottom: 20px;
+  }
+}
+
+footer{
+    text-align: center;
+    color: white;
+}
+
+// Tablet responsive
+@media (min-width: 40rem){
+    header{
+     
+        .header-buttons__brand{
+            display: flex;
+            justify-content:space-between;
+            align-content: center;
+         }
+
+        
+
+       // hamburger buttons
+     .buttons{
+        display: none;
+      }
+
+      ul{
+          margin: 0;
+          list-style: none;
+          display: flex;
+          justify-content: center;
+      }
+
+      li{
+          padding: 0 10px;
+      }
+
+      .special{
+          color: map-get($colors,green);
+      }
+    
+    
+      .info-header{
+         padding-top: 10px;
+         text-align: center;
+     }
+    
+         .info-header h2{
+             letter-spacing: 5px;
+             font-size: 4rem;
+         }
+    
+         .info-header h4{
+           font-size: 2.5rem;
+        }
+    
+        .info-header p{
+           line-height: 2.5rem;
+        }
+    
+         span{
+            color:map-get($colors,green )
+         }
+    
+    }
+
+    #car-performace{
+     .car-performance__moreinfo{
+         padding-top: 40px;
+        grid-template-columns: repeat(3,auto);
+        }
+
+    }
+
+    
+    #car-stats{
+         table{
+          width: 80%;
+          font-size: 1.5rem;
+        } 
+    }
+
+    #car-image__display{
+       grid-template-columns: 70% 30%;
+       grid-row-gap: 1.5rem;
+       grid-column-gap: 0.1rem;
+        align-items: center;
+        
+      
+      img{
+           width: 100%;
+           
+       }
+    
+       p{
+           color: #9CD898;
+
+       }
+        
+    }
+
+    #final-section{
+        height: 60vh;
+    }
+
+    
+}
+
+// Desktop or laptp
+
+@media (min-width: 59rem){
+    header{
+    height: 80vh;
+
+    li{
+        padding: 0 30px;
+        font-size: 1.2rem;
+    }
+
+    .info-header{
+        padding-top: 5%;
+       
+    }
+
+    .info-header h2{
+        letter-spacing: 5px;
+        font-size: 4rem;
+    }
+
+    .info-header h4{
+     font-size: 2.5rem
+   }
+
+   .info-header p{
+      line-height: 3rem;
+      font-size: 1.8rem;
+   }
+
+
+    }
+
+    #car-image__display{
+        grid-template-columns: 60% 40%;
+        grid-row-gap: 1.5rem;
+        grid-column-gap: 0.1rem;
+         align-items: center;
+         
+       
+       img{
+            width: 100%;
+            
+        }
+     
+        p{
+            color: #9CD898;
+            font-size: 3rem;
+ 
+        }
+         
+     }
+
+
+  
+
+}
